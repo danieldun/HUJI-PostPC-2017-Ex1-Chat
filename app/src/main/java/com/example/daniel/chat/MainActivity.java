@@ -40,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new MessageAdapter(new ArrayList<Message>());
         mRecyclerView.setAdapter(mAdapter);
+        /**
         RecyclerView.ItemDecoration itemDecoration =
                 new DividerItemDecoration(this, LinearLayoutManager.VERTICAL);
-        mRecyclerView.addItemDecoration(itemDecoration);
+         mRecyclerView.addItemDecoration(itemDecoration);
+         */
         mTextInput = (EditText) findViewById(R.id.text_box);
 
         btn = (Button) findViewById(R.id.send_button);
